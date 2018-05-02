@@ -47,7 +47,7 @@ post_associate(ind_list)
 print (new_li)
 
 def in_associate(ind_list):
-    i
+
 ind_in = [7, 3, 5, 1]
 print (ind_in)
 
