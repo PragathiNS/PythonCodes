@@ -14,11 +14,13 @@ class ListNode:
             return False
 
 class SingleLinkedList:
+
     def __init__(self):
         "construtor to initiate this object"
         self.head = None
         self.tail = None
         return
+
     def add_list_item(self, item):
         "add an item at the end of the list"
 
@@ -32,6 +34,7 @@ class SingleLinkedList:
 
         self.tail = item
         return
+
     def list_length(self):
         "returns the number of list items"
         count = 0
@@ -40,6 +43,7 @@ class SingleLinkedList:
             count += 1
             curr_node = curr_node.next
         return count
+
     def output_list(self):
         "outputs the list (the value of the node, actually)"
         curr_node = self.head
@@ -47,6 +51,7 @@ class SingleLinkedList:
             print (curr_node.data)
             curr_node = curr_node.next
         return
+
     def unordered_search(self, value):
         "search the linked list for the node that has this value"
         node_id = 0
@@ -58,6 +63,7 @@ class SingleLinkedList:
             curr_node = curr_node.next
             node_id += 1
         return results
+
     def remove_list_item_by_id(self, item_id):
         "remove the list item with the item_id"
         current_id = 0
